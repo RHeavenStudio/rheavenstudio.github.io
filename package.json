@@ -16,5 +16,8 @@
 		"svelte": "^3.54.0",
 		"vite": "^4.0.0"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"github-markdown-css": "^5.2.0"
+	}
 }
