@@ -1,0 +1,12 @@
+/* style.css */
+body {
+    background: #eee;
+    color: #333;
+    font-family: sans-serif;
+
+    max-width: 1200px;
+}
+  
+main {
+  max-width: 10rem;
+}
