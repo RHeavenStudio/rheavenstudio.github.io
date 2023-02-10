@@ -29,7 +29,7 @@ If all previous steps were done correctly, we should have something like this.
 <ReactPlayer controls url='/vid/firstchart/music.mp4' />
 
 
-### Getting the Song offset
+## Getting the Song offset
 
 In some audio files, the song doesn't start immediately after the file begins, the song offset indicates the delay between the start of the file and the start of the music, this should help you figure out the offset.
 
@@ -50,7 +50,7 @@ Note: beats are usually the longest parts of a waveform, check image below for r
 ![waveform](./assets/firstchart/waveform.png)
 
 
-### Charting the remix
+## Charting the remix
 Let's start charting the remix.
 
 1. Select a minigame from the minigames selection menu
