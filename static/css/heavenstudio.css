@@ -1,0 +1,50 @@
+.header-badges {
+  display: block;
+  margin-bottom: 15px;
+  min-height: 35px;
+}
+.header-badges .header-badge {
+  transition-property: all;
+  transition-duration: 0.2s;
+  display: inline-block;
+  border-radius: 3px;
+  background-color: #efefef0e;
+  padding: 3px 8px 3px 3px;
+  height: 31px;
+  margin-right: 6px;
+  margin-bottom: 5px;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+.header-badges .header-badge:hover {
+  text-decoration: none;
+  background-color: #25c2a0;
+  opacity: 1;
+}
+.header-badges .header-badge:hover .badge-avatar {
+  opacity: 1;
+}
+.header-badges .header-badge:hover .badge-label {
+  color: #000;
+}
+.header-badges .header-badge .badge-avatar {
+  transition-property: all;
+  transition-duration: 0.2s;
+  display: inline-block;
+  border-radius: 4px;
+  width: 25px;
+  height: 25px;
+  background-size: cover;
+  margin-right: 12px;
+  font-size: 12px;
+  vertical-align: top;
+  line-height: 23px;
+  padding-left: 8px;
+}
+
+.header-badges .header-badge .emoji-avatar {
+  margin-right: 8px !important;
+}

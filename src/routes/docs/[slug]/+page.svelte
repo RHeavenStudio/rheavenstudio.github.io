@@ -1,6 +1,16 @@
 <script>
-    export let data;
     import Navbar from "../../../components/Navbar.svelte";
+    import { Utterances, utterancesTheme } from "@codewithshin/svelte-utterances";
+    export const theme = 'github-light';
+    export const reponame = "RHeavenStudio/rheavenstudio.github.io.comments"
+
+    export let data;
+
+    export let githubUsernames = {
+		Starpelly : "Starpelly",
+		Saraistupid : "Saraistupid",
+		Zeo : "ThatZeoMan"
+	};
 </script>
 
 <style>
@@ -17,6 +27,7 @@
 			padding: 15px;
 		}
 	}
+    
 </style>
 
 <Navbar/>
@@ -24,6 +35,20 @@
 <article class="markdown-body">
     <h1>{ data.title }</h1>
     <p>Published: {data.date}</p>
-    <h3>Author: {data.author}</h3>
+    <div class="header-badges">
+        {#each data.authors as author}
+        <a class="header-badge" href={`https://github.com/${githubUsernames[author.name]}`}>
+            <span class="badge-avatar" style="background-image: url('https://avatars.githubusercontent.com/{githubUsernames[author.name]}')"></span>
+            <span class="badge-label">{author.name}</span>
+        </a>
+        {/each}
+    </div>
     <svelte:component this={data.content} />
 </article>
+
+<div class="container">
+    <slot />
+    <div class="my-16 relative">
+      <Utterances {reponame} {theme} />
+    </div>
+  </div>
