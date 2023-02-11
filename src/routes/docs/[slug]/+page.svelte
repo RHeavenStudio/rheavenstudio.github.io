@@ -1,5 +1,8 @@
 <script>
     import Navbar from "../../../components/Navbar.svelte";
+    import SidebarItem from "../components/SidebarItem.svelte";
+    import SidebarItemParent from "../components/SidebarItemParent.svelte";
+
     import { Utterances, utterancesTheme } from "@codewithshin/svelte-utterances";
     export const theme = 'github-light';
     export const reponame = "RHeavenStudio/rheavenstudio.github.io.comments"
@@ -40,17 +43,22 @@
       <ul class="menu scrollbar">
 
         <li>
-          <span class="name">Dashboard</span>
+          <!--<span class="name">Contributing</span>-->
           <ul>
 
-            <li class="parent">
-              <a href="#" class="employ current up down transition active"><i class="fa fa-cog" aria-hidden="true"></i>Settings</a>
-              <ul class="submenu" style="display: block;">
-                <li><a href="#">Timezone</a></li>
-                <li><a href="#" class="current">Permissions</a></li>
-                <li><a href="#">Maintenance</a></li>
-              </ul>
-            </li>
+            <SidebarItem label={"Introduction"}/>
+            <SidebarItem label={"Purpose of these Docs"}/>
+            <SidebarItemParent label={"Setting up the project"}>
+              <SidebarItem label={"Hello!"}/>
+              <SidebarItem label={"Hello!"}/>
+              <SidebarItem label={"Hello!"}/>
+              <SidebarItem label={"Hello!"}/>
+              <SidebarItemParent label={"Another parent node!"}>
+                <SidebarItem label={"Hello!2"}/>
+                </SidebarItemParent>
+            </SidebarItemParent>
+            <SidebarItemParent label={"Guidelines"}/>
+            <SidebarItemParent label={"API"}/>
 
           </ul>
 
