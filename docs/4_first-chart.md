@@ -85,4 +85,4 @@ Continue charting your remix as you wish, here's what I came up with at the end.
 <ReactPlayer controls url='/vid/firstchart/kmangba.mp4' />
 
 
-Here's the [download of the remix I made](./assets/firstchart/kmangba.riq) if you need to look at it.
+Here's the [download of the remix I made](/examples/kmangba.riq) if you need to look at it.
