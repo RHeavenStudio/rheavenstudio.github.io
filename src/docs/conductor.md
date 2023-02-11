@@ -1,12 +1,9 @@
 ---
-title: Introduction
-date: "2021-12-14"
+title: Conductor
+date: "2/10/22"
 authors:
     - name: Starpelly
-    - name: Saraistupid
 ---
-
-# Conductor
 
 The `Conductor` is responsible for all beat and time management in Heaven Studio. 
 

@@ -32,23 +32,58 @@
 
 <Navbar/>
 
-<article class="markdown-body">
-    <h1>{ data.title }</h1>
-    <p>Published: {data.date}</p>
-    <div class="header-badges">
-        {#each data.authors as author}
-        <a class="header-badge" href={`https://github.com/${githubUsernames[author.name]}`}>
-            <span class="badge-avatar" style="background-image: url('https://avatars.githubusercontent.com/{githubUsernames[author.name]}')"></span>
-            <span class="badge-label">{author.name}</span>
-        </a>
-        {/each}
-    </div>
-    <svelte:component this={data.content} />
-</article>
+<div class="d-flex" id="wrapper">
 
-<div class="container">
-    <slot />
-    <div class="my-16 relative">
-      <Utterances {reponame} {theme} />
+  <!-- sidebar menu -->
+  <div class="sidebar bg-white-2">
+    <div class="menu">
+      <ul class="menu scrollbar">
+
+        <li>
+          <span class="name">Dashboard</span>
+          <ul>
+
+            <li class="parent">
+              <a href="#" class="employ current up down transition active"><i class="fa fa-cog" aria-hidden="true"></i>Settings</a>
+              <ul class="submenu" style="display: block;">
+                <li><a href="#">Timezone</a></li>
+                <li><a href="#" class="current">Permissions</a></li>
+                <li><a href="#">Maintenance</a></li>
+              </ul>
+            </li>
+
+          </ul>
+
+        </li>
+
     </div>
   </div>
+
+  <!-- website content -->
+  <div class="content">
+    <div class="container-fluid">
+
+      <article class="markdown-body">
+        <h1>{ data.title }</h1>
+        <p>Published: {new Date(data.date).toDateString()}</p>
+        <div class="header-badges">
+            {#each data.authors as author}
+            <a class="header-badge" href={`https://github.com/${githubUsernames[author.name]}`}>
+                <span class="badge-avatar" style="background-image: url('https://avatars.githubusercontent.com/{githubUsernames[author.name]}')"></span>
+                <span class="badge-label">{author.name}</span>
+            </a>
+            {/each}
+        </div>
+        <svelte:component this={data.content} />
+      </article>
+      
+      <div class="container">
+        <slot />
+          <div class="my-16 relative">
+            <Utterances {reponame} {theme} />
+          </div>
+      </div>
+
+    </div>
+  </div>
+</div>

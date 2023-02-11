@@ -1,0 +1,108 @@
+
+/*!
+ * Sidebar menu for Bootstrap 4
+ * Copyright Zdeněk Papučík
+ * MIT License
+*/
+
+/* bg website
+   ========================================================================== */
+   body {
+    background: #f4f4f4;
+}
+
+/* sidebar bg
+   ========================================================================== */
+.bg-white-2.sidebar {
+    background: #fff;
+}
+
+/* sidebar list
+   ========================================================================== */
+.bg-white-2.sidebar ul.menu li {
+    color: #8a8a8a;
+}
+
+.bg-white-2.sidebar ul.menu li ul li ul {
+    border-left: 0.0625rem solid #ebebeb;
+}
+
+/* sidebar hyperlink
+   ========================================================================== */
+.bg-white-2.sidebar ul.menu li ul li a {
+    border-radius: 0.1875rem;
+    color: #494949;
+}
+
+.bg-white-2.sidebar ul.menu li ul li a:hover {
+    background: #f4f4f4;
+
+}
+
+.bg-white-2.sidebar ul.menu li ul li a.current {
+    background: #f4f4f4;
+}
+
+.bg-white-2.sidebar ul.menu li ul li.parent a.current {
+    background: #f4f4f4;
+}
+
+.bg-white-2.sidebar ul.menu li ul li.parent .submenu a.current {
+    background: #f4f4f4;
+}
+
+/* sidebar hyperlink icon
+   ========================================================================== */
+.bg-white-2.sidebar ul.menu li ul li.parent a.employ:before {
+    color: #b9b9b9;
+}
+
+.bg-white-2.sidebar ul.menu li ul li.parent a.employ.active:before {
+    color: #494949;
+}
+
+/* navbar bg
+   ========================================================================== */
+.bg-white-2.navbar {
+    background: #f4f4f4;
+}
+
+/* sidebar menu button
+   ========================================================================== */
+.bg-white-2 a#sidebar.bars {
+    color: #c9c9c9;
+}
+
+.bg-white-2 a#sidebar.bars:hover {
+    color: #919191;
+}
+
+/* navbar title
+   ========================================================================== */
+.bg-white-2.navbar a.navbar-title {
+    color: #494949;
+}
+
+/* website content
+   ========================================================================== */
+.content .box {
+    color: #494949;
+}
+
+/* custom perfect scrollbar style
+   ========================================================================== */
+.bg-white-2.sidebar .ps__thumb-y {
+    background: #e0e0e0;
+}
+
+.bg-white-2.sidebar .ps__rail-y:hover > .bg-white-2.sidebar .ps__thumb-y,
+.bg-white-2.sidebar .ps__rail-y:focus > .bg-white-2.sidebar .ps__thumb-y,
+.bg-white-2.sidebar .ps__rail-y.ps--clicking .ps__thumb-y {
+    background: #e0e0e0;
+}
+
+.bg-white-2.sidebar .ps .ps__rail-y:hover,
+.bg-white-2.sidebar .ps .ps__rail-y:focus,
+.bg-white-2.sidebar .ps .ps__rail-y.ps--clicking {
+    background: none;
+}

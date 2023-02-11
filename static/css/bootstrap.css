@@ -3812,7 +3812,9 @@ textarea.form-control-lg {
   --bs-navbar-toggler-border-radius: 0.375rem;
   --bs-navbar-toggler-focus-width: 0.25rem;
   --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 999;
   display: flex;
   flex-wrap: wrap;
   align-items: center;

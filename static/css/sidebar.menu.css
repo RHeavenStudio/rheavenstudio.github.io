@@ -1,0 +1,173 @@
+
+/*!
+ * Sidebar menu for Bootstrap 4
+ * Copyright Zdeněk Papučík
+ * MIT License
+*/
+
+.sidebar {
+    min-height: calc(100vh - 3.5625rem);
+    transition: margin 0.15s ease-out;
+    margin-left: -17rem;
+}
+
+@media (min-width: 768px) {
+    .sidebar {
+	    margin-left: 0;
+    }
+}
+
+.sidebar .menu {
+    width: 17rem;
+    position: fixed;
+}
+
+/* sidebar menu toggle
+   ========================================================================== */
+#wrapper.toggle .sidebar {
+    margin-left: 0;
+}
+
+@media (min-width: 768px) {
+    #wrapper.toggle .sidebar {
+	margin-left: -17rem;
+    }
+}
+
+/* sidebar list
+   ========================================================================== */
+
+.sidebar ul.menu {
+    max-height: 80vh;
+    list-style: none;
+    padding: 0 1.25rem;
+    font-size: 0.875rem;
+}
+
+.sidebar ul.menu li {
+    line-height: 2.125rem;
+    margin-top: 0.625rem;
+    padding: 0;
+}
+
+.sidebar ul.menu li span.name {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
+
+.sidebar ul.menu li ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul.menu li ul li {
+    margin: 0;
+}
+
+.sidebar ul.menu li ul li ul {
+    display: none;
+    margin: 0.9375rem 0 0.9375rem 0.625rem;
+    padding-left: 0.625rem;
+}
+
+/* sidebar hyperlink
+   ========================================================================== */
+.sidebar ul.menu li ul li a {
+    display: block;
+    margin-bottom: 0.125rem;
+    padding: 0 0.625rem;
+    text-decoration: none;
+}
+
+.sidebar ul.menu li ul li a i {
+    margin-right: 0.625rem;
+    opacity: 0.3;
+}
+
+.sidebar ul.menu li ul li a:hover i {
+    transition: 0.5s all;
+    transform: rotate(360deg);
+    opacity: 1;
+}
+
+.sidebar ul.menu li ul li.parent a.employ:before {
+    float: right;
+    font-family: "FontAwesome";
+    margin: 0 0.1875rem 0 0;
+}
+
+/* sidebar hyperlink icon
+   ========================================================================== */
+.sidebar ul.menu li ul li.parent a.employ.up:before {
+    content: "\f106";
+}
+
+.sidebar ul.menu li ul li.parent a.employ.down:before {
+    content: "\f107";
+}
+
+.sidebar ul.menu li ul li.parent a.employ.transition:before {
+    transition: 0.2s all;
+}
+
+.sidebar ul.menu li ul li.parent a.employ.rotate:before {
+    transform: rotate(-180deg);
+}
+
+.sidebar ul.menu li ul li.parent a.employ.rotate.active:before {
+    transform: rotate(360deg);
+}
+
+/* sidebar menu button
+   ========================================================================== */
+a#sidebar.bars {
+    font-size: 0.875rem;
+    margin-left: 0.25rem;
+    transition: 0.2s all;
+}
+
+/* website content
+   ========================================================================== */
+.content {
+    min-width: 100vw;
+}
+
+@media (min-width: 768px) {
+    .content {
+	min-width: 0;
+	width: 100%;
+    }
+}
+
+.content .box {
+    padding: 1.25rem;
+    margin-bottom: 1.25rem;
+    border-radius: 0.1875rem;
+    font-size: 0.875rem;
+}
+
+/* navbar
+   ========================================================================== */
+.navbar .navbar-title {
+    margin-left: 0.1875rem;
+}
+
+/* custom perfect scrollbar style
+   ========================================================================== */
+.scrollbar {
+    position: relative;
+}
+
+.ps__thumb-y {
+    width: 0.3125rem;
+}
+
+.ps__rail-y {
+    margin-top: 0.0625rem;
+}
+
+.ps__rail-y:hover > .ps__thumb-y,
+.ps__rail-y:focus > .ps__thumb-y,
+.ps__rail-y.ps--clicking .ps__thumb-y {
+    width: 0.3125rem;
+}
