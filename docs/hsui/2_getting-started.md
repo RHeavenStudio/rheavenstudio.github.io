@@ -1,10 +1,8 @@
 ---
-sidebar_position: 3
+sidebar_position: 2
 ---
 
-# Getting started with Heaven Studio
-
-After downloading and extracting Heaven Studio, launch the appropriately named "Heaven Studio" executable file.
+# Quick overlook on the UI
 
 Heaven Studio's UI is easy to understand, everything is explained below.
 
